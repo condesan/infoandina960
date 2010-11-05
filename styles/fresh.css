@@ -1,0 +1,126 @@
+body {
+background-color:#fff;
+}
+
+#page {
+background-color:#fff;
+}
+
+
+#site-name {
+display:none;
+}
+
+#site-header {
+background-color:#582B8A;
+height:90px;
+}
+
+#menu-top {
+background-color:#A8A9AD;
+}
+
+#site-menu {
+margin-top:30px;
+}
+
+#site-menu ul li {
+border-left:solid 1px #fff;
+}
+
+#site-menu ul li:first-child {
+border-left:none;
+}
+
+#site-menu a {
+color:#fff;
+text-decoration:none;
+}
+
+/*icons*/
+ul.icons li {
+float:left;
+list-style-type:none;
+margin-left:0.5em;
+}
+
+ul.icons li a, ul.icons li img {
+vertical-align:middle !important;
+}
+
+
+/*columnas*/
+#column-left, #column-right {
+padding-top:1em;
+}
+
+
+#column-left h1, #column-right h1 {
+color:#582B8A;
+font-size:1.5em;
+font-weight:bold;
+margin-bottom:0px;
+padding-left:1em;
+border-top:solid 2px #ccc;
+border-right:solid 2px #ccc;
+border-left:solid 2px #ccc;
+border-bottom:solid 2px #ccc;
+-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px;
+-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+
+
+#column-right .view,  #column-left .view {
+border-left:solid 2px #ccc;
+border-right:solid 2px #ccc;
+padding-top:1em;
+border-bottom:solid 2px #ccc;
+}
+
+/*slideshow*/
+
+#slideshow {
+height:230px;
+background:url('../images/grey_pattern.jpg');
+}
+
+#slideshow .views-field-field-foto-fid {
+float:right;
+}
+
+#slideshow .slideshow-home  .view-content .views-row {
+clear:both;
+height:228px;
+}
+
+#slideshow .slideshow-home  .view-content .views-row .views-field-title {
+padding:20px 0px 20px 20px;
+}
+
+#slideshow .slideshow-home  .view-content .views-row .views-field-teaser {
+padding:0px 0px 20px 20px;
+}
+
+#slideshow .slideshow-home  .view-content .views-row .views-field-title a {
+text-decoration:none;
+color:#582B8A;
+font-size:1.5em;
+line-height:0.2em;
+font-weight:bold;
+}
+
+/*vistas de bloques*/
+
+.view .views-field-title a {
+text-decoration:none;
+font-weight:bold;
+color:#582B8A;
+}
+
+.view ul li {
+list-style-type:none;
+}

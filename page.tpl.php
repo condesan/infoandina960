@@ -14,30 +14,27 @@
 
 <body class="<?php print $body_classes; ?> show-grid">
   <div id="page" class="container-16 clear-block">
-
-    <div id="site-header" class="clear-block">
-      <div id="branding" class="grid-4 clear-block">
+		<div id="menu-top" class="grid-16 clear-block">
+				<div class="grid-5 suffix-4 alpha omega">&nbsp;xxxxxxxxxxxx</div>
+				<div class="grid-5 prefix-2 omega"><?php
+					if ($icons) { print $icons;} 
+					if ($search_box) { print $search_box;} ?></div>
+		</div>
+    <div id="site-header" class="grid-16 clear-block">
+      <div id="branding" class="grid-4 alpha">
       <?php if ($linked_logo_img): ?>
         <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
-      <?php endif; ?>
-      <?php if ($linked_site_name): ?>
-        <h1 id="site-name" class="grid-3 omega"><?php print $linked_site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <div id="site-slogan" class="grid-3 omega"><?php print $site_slogan; ?></div>
       <?php endif; ?>
       </div>
 
     <?php if ($main_menu_links || $secondary_menu_links): ?>
-      <div id="site-menu" class="grid-12">
+      <div id="site-menu" class="grid-9 prefix-3 omega">
         <?php print $main_menu_links; ?>
-        <?php print $secondary_menu_links; ?>
+        <?php #print $secondary_menu_links; ?>
       </div>
     <?php endif; ?>
 
-    <?php if ($search_box): ?>
-      <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
-    <?php endif; ?>
+
     </div>
 
 
@@ -54,8 +51,27 @@
       </div>
     <?php endif; ?>
     </div>
+    
+		<!--solo se muestra en el home-->
+		<!--inicio del if-->
+		
+		<?php if ($is_front) { ?>
+		<div id="slideshow" class="grid-16 clear-block"><?php print infoandina960_show_view_block('slideshow-block_1');?></div>
+		<div id="messages" class="grid-16"><?php print $messages; ?></div>
+		<div id="column-left" class="grid-7">
+				<?php print infoandina960_show_view_block('noticias-block_1');?>
+		</div>
+		<div id="column-right" class="grid-8">
+		<div id="column-right-top"></div>
+			<div id="column-right-top-subcolumn-right" class="grid-5 alpha">
+				<?php print infoandina960_show_view_block('recursos-block_1');?>
+			</div>
+			<div id="column-right-top-subcolumn-left" class="grid-3 omega"> xxxx</div>
+		</div>
 
-
+		<?php } else { ?> <!--inicio del else -->
+	
+		
     <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
@@ -86,6 +102,7 @@
     </div>
   <?php endif; ?>
 
+	<?php } ?> <!--fin del else -->
 
   <div id="footer" class="prefix-1 suffix-1">
     <?php if ($footer): ?>
