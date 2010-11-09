@@ -51,8 +51,8 @@ function infoandina960_preprocess_search_theme_form(&$vars, $hook) {
 
 function infoandina960_show_view_block($delta) {
 	$block = module_invoke('views', 'block', 'view', $delta);
-	$output .= ( $block['subject'] ? "<h1>" . $block['subject'] . "</h1>" : '' );
+	$output .= ( $block['subject'] ? "<h2>" . $block['subject'] . "</h2>" : '' );
 	$output .= $block['content'];
-	return $output;
+	return "<div id=\"views-". $delta ."\" class=\"block\">" . $output . "</div>";
 	}
 

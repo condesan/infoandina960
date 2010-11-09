@@ -30,3 +30,17 @@ padding:0px;
 .block .content .view ul li {
 margin:0px
 }
+
+
+
+.block .view .views-field-title a {
+text-decoration:none;
+font-weight:bold;
+color:#582B8A;
+}
+
+.block .view ul li {
+list-style-type:none;
+}
+
+

@@ -166,17 +166,6 @@ line-height:0.2em;
 font-weight:bold;
 }
 
-/*vistas de bloques*/
-
-.view .views-field-title a {
-text-decoration:none;
-font-weight:bold;
-color:#582B8A;
-}
-
-.view ul li {
-list-style-type:none;
-}
 
 /*breadcrumb*/
 
