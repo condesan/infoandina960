@@ -75,34 +75,43 @@
 		</div>
 
 		<?php } else { ?> <!--inicio del else -->
-	
-		
-    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
-      <?php print $breadcrumb; ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php if ($tabs): ?>
-        <div class="tabs"><?php print $tabs; ?></div>
-      <?php endif; ?>
-      <?php print $messages; ?>
-      <?php print $help; ?>
-
-      <div id="main-content" class="region clear-block">
-        <?php print $content; ?>
-      </div>
-
-      <?php print $feed_icons; ?>
+	  <div id="menu-principal" class="grid-16"><?php  print theme('links', menu_navigation_links('menu-menu-principal'), array('class' => 'links menu-principal')); ?> </div>
+		<div id="breadcrumb" class="grid-16"> <?php print $breadcrumb; ?> </div>
+    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 4) . ' ' . ns('push-4', !$left, 4); ?>">
+				<div id="fulltext">
+					
+					<?php if($title): ?>
+						<h2 class="supertitle"> <?php print $node_type; ?></h2>
+					<?php endif; ?>
+					<div id="fulltext-body">
+							<?php if ($title): ?>
+								<h1 class="title" id="page-title"><?php print $title; ?></h1>
+							<?php endif; ?>
+							<?php if ($tabs): ?>
+								<div class="tabs"><?php print $tabs; ?></div>
+							<?php endif; ?>
+							<?php print $messages; ?>
+							<?php print $help; ?>
+				
+							<div id="main-content" class="region clear-block">
+								<?php print $content; ?>
+							</div>
+				
+							<?php print $feed_icons; ?>
+					
+					</div><!--fin de fulltext-body-->
+					
+			</div>	<!--fin de fulltext-->
     </div>
 
   <?php if ($left): ?>
-    <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 3); ?>">
+    <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 4); ?>">
       <?php print $left; ?>
     </div>
   <?php endif; ?>
 
   <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-3">
+    <div id="sidebar-right" class="column sidebar region grid-4">
       <?php print $right; ?>
     </div>
   <?php endif; ?>

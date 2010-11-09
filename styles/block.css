@@ -1,0 +1,32 @@
+.block h2 {
+border-bottom: 1px solid #CCC;
+border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
+border-top: 1px solid #CCC;
+border-top-left-radius: 8px 8px;
+border-top-right-radius: 8px 8px;
+color: #582B8A;
+font-size: 1.5em;
+font-weight: normal;
+margin-bottom: 0px;
+padding-left: 10px;
+}
+
+.block .content .view {
+border-bottom: 1px solid #CCC;
+border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
+padding-top: 1em;
+}
+
+.block .content .view .view-content {
+margin:0px 10px 10px;
+}
+
+.block .content .view  ul {
+padding:0px;
+}
+
+.block .content .view ul li {
+margin:0px
+}

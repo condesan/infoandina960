@@ -2,7 +2,7 @@
 
 
 function infoandina960_preprocess_page(&$vars, $hook) {
-
+	#dsm($vars);
 	$icons = array(
 	l(theme('image', path_to_theme() . '/images/' . 'icon_facebook.png'), 'http://facebook.com', array('html' => TRUE)),
 	l(theme('image', path_to_theme() . '/images/' . 'icon_rss.jpg'), 'http://infoandina.org/rss.xml', array('html' => TRUE)),	
@@ -11,6 +11,11 @@ function infoandina960_preprocess_page(&$vars, $hook) {
 	);
 	
 	$vars['icons'] = theme('item_list', $icons, $title = NULL, $type = 'ul', array('class' => 'icons'));
+	
+	if($vars['template_files'][0] == 'page-node') {
+		$vars['node_type'] = $vars['node']->type;
+		}
+	
 	}
 
 

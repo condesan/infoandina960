@@ -60,7 +60,6 @@ padding-top:7px;
 
 /*footer*/
 
-
 #footer {
 background-color:#582B8A;
 height:60px;
@@ -178,3 +177,37 @@ color:#582B8A;
 .view ul li {
 list-style-type:none;
 }
+
+/*breadcrumb*/
+
+#breadcrumb .breadcrumb {
+padding: 5px 0px 0px 5px;
+}
+
+#breadcrumb .breadcrumb a {
+text-decoration:none;
+color:#582B8A;
+}
+
+/*menu principal*/
+
+#menu-principal {
+background:url('../images/grey_pattern.jpg');
+padding:5px 0px;
+}
+
+#menu-principal .menu-principal {
+float:right;
+margin-right:10px;
+}
+
+#menu-principal .menu-principal a {
+text-decoration:none;
+color:#454545;
+}
+
+#menu-principal .menu-principal a:hover {
+text-decoration:none;
+color:#666;
+}
+
