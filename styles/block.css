@@ -12,22 +12,22 @@ margin-bottom: 0px;
 padding-left: 10px;
 }
 
-.block .content .view {
+.block .view {
 border-bottom: 1px solid #CCC;
 border-left: 1px solid #CCC;
 border-right: 1px solid #CCC;
 padding-top: 1em;
 }
 
-.block .content .view .view-content {
+.block .view .view-content {
 margin:0px 10px 10px;
 }
 
-.block .content .view  ul {
+.block .view  ul {
 padding:0px;
 }
 
-.block .content .view ul li {
+.block .view ul li {
 margin:0px
 }
 
