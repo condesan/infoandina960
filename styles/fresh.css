@@ -43,7 +43,24 @@ text-decoration:none;
 
 #search {
 width:150px;
+padding:0px;
 }
+
+#search-theme-form .container-inline {
+}
+
+/*
+#search .send-button {
+padding:0px;
+margin:0px;
+}
+
+#search .txtSearch {
+border:solid 1px #ccc;
+padding:0px;
+margin:0px;
+}
+*/
 
 /*top-menus*/
 
@@ -51,11 +68,11 @@ width:150px;
 .top-menu-left {
 color:#fff;
 font-weight:bold;
-padding-top:10px;
+
 }
 
 .top-menu-right {
-padding-top:7px;
+
 }
 
 /*footer*/
@@ -72,9 +89,12 @@ margin-top:20px;
 
 /*icons*/
 
+
+/*
 ul.icons {
 overflow:auto;
 }
+*/
 
 ul.icons li {
 float:left;
@@ -82,8 +102,9 @@ list-style-type:none;
 margin-left:0.5em;
 }
 
+
 ul.icons li a, ul.icons li img {
-vertical-align:middle !important;
+
 }
 
 

@@ -18,7 +18,7 @@
 				<div class="grid-4 suffix-4 top-menu-left"><?php print format_date(time(), 'custom', 'D M j G:i:s T Y'); ?></div>
 				<div class="grid-8 alpha omega top-menu-right">
 				  <div class="grid-3 prefix-2 alpha omega"><?php if ($icons) { print $icons;} ?></div>
-					<div class="grid-3 omega"><?php if ($search_box) { print $search_box;} ?></div>
+					<div class="grid-3 alpha omega"><?php if ($search_box) { print $search_box;} ?></div>
 					
 					</div>
 		</div>
